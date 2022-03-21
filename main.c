@@ -6,7 +6,7 @@
 /*   By: iel-mach <iel-mach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 00:11:13 by iel-mach          #+#    #+#             */
-/*   Updated: 2022/03/21 05:41:30 by iel-mach         ###   ########.fr       */
+/*   Updated: 2022/03/21 05:44:22 by iel-mach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,8 +91,8 @@ int	main(int ac, char **av, char **env)
 		second_child(av[4], env, av[3], fd);
 		close (fd[0]);
 		close (fd[1]);
-		while (wait(NULL) != -1)
-		{};
+		wait(NULL);
+		wait(NULL);
 	}
 	else
 		write (2, "Error\n", 6);

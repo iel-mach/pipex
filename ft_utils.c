@@ -6,7 +6,7 @@
 /*   By: iel-mach <iel-mach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 04:14:23 by iel-mach          #+#    #+#             */
-/*   Updated: 2022/03/21 05:27:33 by iel-mach         ###   ########.fr       */
+/*   Updated: 2022/03/21 05:49:59 by iel-mach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,8 +42,8 @@ char	**ft_path_join(char **env, char *s)
 
 	splt = find_path(env);
 	cmd = ft_split(s, ' ');
-	i = 0;
-	while (splt[i])
+	i = -1;
+	while (splt[++i])
 	{
 		splt[i] = ft_strjoin(splt[i], "/");
 		k = ft_strjoin(splt[i], cmd[0]);
@@ -57,7 +57,6 @@ char	**ft_path_join(char **env, char *s)
 			return (cmd);
 		}
 		free (k);
-		i++;
 	}
 	free (splt);
 	return (cmd);
