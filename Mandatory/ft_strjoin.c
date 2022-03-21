@@ -6,11 +6,11 @@
 /*   By: iel-mach <iel-mach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 04:13:24 by iel-mach          #+#    #+#             */
-/*   Updated: 2022/03/21 02:41:23 by iel-mach         ###   ########.fr       */
+/*   Updated: 2022/03/22 00:05:52 by iel-mach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pipex.h"
+#include "../pipex.h"
 
 char	*ft_strjoin(char *s1, char *s2)
 {

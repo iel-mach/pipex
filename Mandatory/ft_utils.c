@@ -6,11 +6,11 @@
 /*   By: iel-mach <iel-mach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 04:14:23 by iel-mach          #+#    #+#             */
-/*   Updated: 2022/03/21 05:49:59 by iel-mach         ###   ########.fr       */
+/*   Updated: 2022/03/22 00:12:51 by iel-mach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pipex.h"
+#include "../pipex.h"
 
 char	**find_path(char **s)
 {
@@ -83,7 +83,6 @@ int	check_file(char *s)
 	if (fd < 0)
 	{
 		perror(s);
-		return (-1);
 	}
 	return (fd);
 }

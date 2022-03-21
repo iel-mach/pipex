@@ -6,11 +6,11 @@
 /*   By: iel-mach <iel-mach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 04:15:24 by iel-mach          #+#    #+#             */
-/*   Updated: 2022/03/20 04:16:10 by iel-mach         ###   ########.fr       */
+/*   Updated: 2022/03/22 00:05:49 by iel-mach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pipex.h"
+#include "../pipex.h"
 
 int	countword(char const *s, char c)
 {

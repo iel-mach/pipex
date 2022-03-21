@@ -6,11 +6,11 @@
 /*   By: iel-mach <iel-mach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 00:11:13 by iel-mach          #+#    #+#             */
-/*   Updated: 2022/03/21 05:44:22 by iel-mach         ###   ########.fr       */
+/*   Updated: 2022/03/22 00:14:35 by iel-mach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pipex.h"
+#include "../pipex.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
@@ -32,6 +32,8 @@ void	first_child(char *s, char **env, char *join, int *fd)
 
 	cmd = ft_path_join(env, join);
 	a = check_file(s);
+	if (a < 0)
+		return ;
 	y = fork();
 	if (y == 0)
 	{
@@ -41,11 +43,11 @@ void	first_child(char *s, char **env, char *join, int *fd)
 		execve(cmd[0], cmd, env);
 		write(1, "cmd not found", 14);
 	}
-	y = 0;
-	while (cmd[y])
+	a = 0;
+	while (cmd[a])
 	{
-		free(cmd[y]);
-		y++;
+		free(cmd[a]);
+		a++;
 	}
 	free (cmd);
 }

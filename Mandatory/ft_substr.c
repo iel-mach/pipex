@@ -6,11 +6,11 @@
 /*   By: iel-mach <iel-mach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 04:17:12 by iel-mach          #+#    #+#             */
-/*   Updated: 2022/03/21 05:43:43 by iel-mach         ###   ########.fr       */
+/*   Updated: 2022/03/22 00:05:56 by iel-mach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pipex.h"
+#include "../pipex.h"
 
 int	ft_strlen(char *s)
 {
