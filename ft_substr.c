@@ -6,7 +6,7 @@
 /*   By: iel-mach <iel-mach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 04:17:12 by iel-mach          #+#    #+#             */
-/*   Updated: 2022/03/21 00:56:43 by iel-mach         ###   ########.fr       */
+/*   Updated: 2022/03/21 05:40:41 by iel-mach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_strlen(char *s)
 	return (i);
 }
 
-char	*ft_substr(char *s, unsigned int start, size_t len)
+char	*ft_substr(char *s,int start, size_t len)
 {
 	char	*x;
 	size_t	i;

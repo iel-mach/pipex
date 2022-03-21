@@ -6,7 +6,7 @@
 /*   By: iel-mach <iel-mach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 04:12:52 by iel-mach          #+#    #+#             */
-/*   Updated: 2022/03/20 04:31:44 by iel-mach         ###   ########.fr       */
+/*   Updated: 2022/03/21 05:40:45 by iel-mach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,5 @@ int		ft_strlen(char *s);
 int		creat_file(char *s);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		check_file(char *s);
-char	*ft_substr(char *s, unsigned int start, size_t len);
+char	*ft_substr(char *s, int start, size_t len);
 #endif
